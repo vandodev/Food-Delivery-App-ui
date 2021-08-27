@@ -234,6 +234,7 @@ export default class Home extends React.Component {
             image={require("../images/4.png")}
             title="Smokehouse"
             price="12.99"
+            onPress={() => this.props.navigation.navigate("Detail")}
           />
           <Product
             image={require("../images/9.png")}
