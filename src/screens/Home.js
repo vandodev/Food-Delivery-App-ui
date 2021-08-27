@@ -1,6 +1,7 @@
 import React from "react";
 import { View, Image, Picker, Text, ScrollView } from "react-native";
 import Icon from "@expo/vector-icons/Entypo";
+import Product from "../components/Product";
 
 export default class Home extends React.Component {
   state = {
@@ -189,6 +190,78 @@ export default class Home extends React.Component {
             </Text>
           </View>
         </ScrollView>
+
+        <View
+          style={{
+            alignItems: "center",
+            marginHorizontal: 20,
+            flexDirection: "row",
+            marginTop: 40,
+          }}
+        >
+          <View
+            style={{
+              width: "50%",
+            }}
+          >
+            <Text
+              style={{
+                fontSize: 22,
+                fontWeight: "bold",
+              }}
+            >
+              Novo Produto
+            </Text>
+          </View>
+          <View
+            style={{
+              width: "50%",
+              alignItems: "flex-end",
+            }}
+          >
+            <Icon name="dots-three-horizontal" size={25} color="#848385" />
+          </View>
+        </View>
+
+        <View
+          style={{
+            flexDirection: "row",
+            marginHorizontal: 15,
+            marginTop: 30,
+          }}
+        >
+          <Product
+            image={require("../images/4.png")}
+            title="Smokehouse"
+            price="12.99"
+          />
+          <Product
+            image={require("../images/9.png")}
+            title="Honey Chilli"
+            price="10.99"
+            marginTop={25}
+          />
+        </View>
+
+        <View
+          style={{
+            flexDirection: "row",
+            marginHorizontal: 15,
+            marginTop: 30,
+          }}
+        >
+          <Product
+            image={require("../images/6.png")}
+            title="Adios Pizza"
+            price="11.99"
+          />
+          <Product
+            image={require("../images/10.png")}
+            title="Burrito"
+            price="10.99"
+            marginTop={25}
+          />
+        </View>
       </ScrollView>
     );
   }
