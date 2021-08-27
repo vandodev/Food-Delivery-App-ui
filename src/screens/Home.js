@@ -80,6 +80,115 @@ export default class Home extends React.Component {
             deseja comer hoje?
           </Text>
         </View>
+        <ScrollView
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          style={{ marginTop: 40 }}
+        >
+          <View
+            style={{
+              alignItems: "center",
+              flexDirection: "row",
+              backgroundColor: "#f9dd7a",
+              marginHorizontal: 15,
+              borderRadius: 25,
+              paddingVertical: 5,
+              paddingHorizontal: 15,
+            }}
+          >
+            <Image
+              source={require("../images/5.png")}
+              style={{ height: 40, width: 40 }}
+            />
+            <Text
+              style={{
+                fontWeight: "bold",
+                fontSize: 18,
+                paddingLeft: 10,
+              }}
+            >
+              Burgers
+            </Text>
+          </View>
+
+          <View
+            style={{
+              alignItems: "center",
+              flexDirection: "row",
+              backgroundColor: "#e5e4eb",
+              marginHorizontal: 15,
+              borderRadius: 25,
+              paddingVertical: 5,
+              paddingHorizontal: 15,
+            }}
+          >
+            <Image
+              source={require("../images/10.png")}
+              style={{ height: 40, width: 40 }}
+            />
+            <Text
+              style={{
+                fontWeight: "bold",
+                fontSize: 18,
+                paddingLeft: 10,
+              }}
+            >
+              Burrito
+            </Text>
+          </View>
+
+          <View
+            style={{
+              alignItems: "center",
+              flexDirection: "row",
+              backgroundColor: "#e5e4eb",
+              marginHorizontal: 15,
+              borderRadius: 25,
+              paddingVertical: 5,
+              paddingHorizontal: 15,
+            }}
+          >
+            <Image
+              source={require("../images/7.png")}
+              style={{ height: 40, width: 40 }}
+            />
+            <Text
+              style={{
+                fontWeight: "bold",
+                fontSize: 18,
+                paddingLeft: 10,
+              }}
+            >
+              Salads
+            </Text>
+          </View>
+
+          <View
+            style={{
+              alignItems: "center",
+              flexDirection: "row",
+              backgroundColor: "#e5e4eb",
+              marginHorizontal: 15,
+              borderRadius: 25,
+              paddingVertical: 5,
+              paddingHorizontal: 15,
+            }}
+          >
+            <Image
+              source={require("../images/6.png")}
+              style={{ height: 40, width: 40 }}
+            />
+            <Text
+              style={{
+                fontWeight: "bold",
+                fontSize: 18,
+                paddingLeft: 10,
+              }}
+            >
+              Pizza
+            </Text>
+          </View>
+        </ScrollView>
       </ScrollView>
     );
   }
